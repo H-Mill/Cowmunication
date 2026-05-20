@@ -1,4 +1,5 @@
 export const SAYINGS = [
+  "Bridging the gap between humans and cows since 2026.",
   "Holy cow, you can actually talk to cattle now.",
   "Don't have a cow — just translate one.",
   "Until the cows come home, we'll keep mooing.",

@@ -10,14 +10,20 @@
 
 /* ── Header ─────────────────────────────────── */
 .header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 2px solid var(--border);
+}
+
+.headerRow {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   gap: 1rem;
-  padding-bottom: 1.25rem;
-  border-bottom: 2px solid var(--border);
 }
 
 .title {
@@ -25,6 +31,7 @@
   font-weight: 800;
   color: var(--grass-dk);
   letter-spacing: -0.5px;
+  margin: 0;
 }
 
 .subtitle {
@@ -41,11 +48,3 @@
   gap: 1rem;
 }
 
-/* ── Footer ─────────────────────────────────── */
-.footer {
-  text-align: center;
-  font-size: 0.78rem;
-  color: var(--text-muted);
-  padding-top: 0.75rem;
-  border-top: 1px solid var(--border);
-}

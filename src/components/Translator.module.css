@@ -32,7 +32,7 @@
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   gap: 0.75rem;
-  align-items: start;
+  align-items: center;
 }
 
 @media (max-width: 600px) {
@@ -117,7 +117,6 @@
 .controls {
   display: flex;
   align-items: center;
-  padding-top: 1.6rem;
 }
 
 .flipBtn {

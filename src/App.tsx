@@ -8,21 +8,17 @@ export default function App() {
   return (
     <div className={styles.page}>
       <header className={styles.header}>
-        <CowLogo />
-        <div>
+        <div className={styles.headerRow}>
+          <CowLogo />
           <h1 className={styles.title}>Cowmunication</h1>
-          <p className={styles.subtitle}>Bridging the gap between humans and cows since 2026</p>
+          <ThemeToggle />
         </div>
-        <ThemeToggle />
+        <Billboard />
       </header>
 
       <main className={styles.main}>
         <Translator />
       </main>
-
-      <footer className={styles.footer}>
-        <Billboard />
-      </footer>
     </div>
   );
 }
