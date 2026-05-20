@@ -1,0 +1,168 @@
+/* ── Mode bar ───────────────────────────────── */
+.modeBar {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.modeBtn {
+  padding: 0.45rem 1.1rem;
+  border-radius: 999px;
+  border: 2px solid var(--grass);
+  background: transparent;
+  color: var(--grass);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.modeBtn:hover {
+  background: var(--grass);
+  color: #fff;
+}
+
+.modeBtn.active {
+  background: var(--grass);
+  color: #fff;
+}
+
+/* ── Panels ─────────────────────────────────── */
+.panels {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 0.75rem;
+  align-items: start;
+}
+
+@media (max-width: 600px) {
+  .panels {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+
+  .controls {
+    justify-content: center;
+  }
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.panelHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.panelLabel {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--spot);
+}
+
+.textarea {
+  width: 100%;
+  min-height: 280px;
+  padding: 0.85rem;
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  background: #fff;
+  font-size: 0.95rem;
+  font-family: inherit;
+  line-height: 1.6;
+  resize: vertical;
+  transition: border-color 0.15s;
+  outline: none;
+}
+
+.textarea:focus {
+  border-color: var(--grass);
+}
+
+.output {
+  min-height: 280px;
+  padding: 0.85rem;
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--hide-2);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  word-break: break-word;
+  white-space: pre-wrap;
+  overflow-y: auto;
+}
+
+.outputError {
+  border-color: var(--error);
+}
+
+.errorText {
+  color: var(--error);
+  font-size: 0.9rem;
+}
+
+.placeholder {
+  color: #b0a090;
+  font-style: italic;
+}
+
+/* ── Controls (flip button) ─────────────────── */
+.controls {
+  display: flex;
+  align-items: center;
+  padding-top: 1.6rem;
+}
+
+.flipBtn {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  background: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.flipBtn:hover:not(:disabled) {
+  border-color: var(--grass);
+  background: var(--grass);
+  color: #fff;
+}
+
+.flipBtn:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+/* ── Clear button ───────────────────────────── */
+.clearBtn {
+  padding: 0.25rem 0.7rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  border-radius: 6px;
+  border: 1.5px solid var(--border);
+  background: transparent;
+  cursor: pointer;
+  transition: background 0.12s, color 0.12s;
+}
+
+.clearBtn:hover:not(:disabled) {
+  background: var(--grass-dk);
+  border-color: var(--grass-dk);
+  color: #fff;
+}
+
+.clearBtn:disabled {
+  opacity: 0.35;
+  cursor: default;
+}

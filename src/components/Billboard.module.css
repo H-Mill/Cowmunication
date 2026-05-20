@@ -1,0 +1,18 @@
+.billboard {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.billboardText {
+  display: block;
+  width: 100%;
+  text-align: center;
+  animation: billboard-scroll 16s linear forwards;
+}
+
+@keyframes billboard-scroll {
+  0%      { transform: translateX(100%); }
+  18.75%  { transform: translateX(0); }
+  81.25%  { transform: translateX(0); }
+  100%    { transform: translateX(-100%); }
+}
