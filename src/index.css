@@ -13,8 +13,23 @@
   --spot:    #3b2a1a;
   --border:  #c8b89a;
   --error:   #c0392b;
+  --surface: #ffffff;
+  --text-muted: #6b5e50;
   --radius:  10px;
   font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+[data-theme="dark"] {
+  --grass:   #6ba85c;
+  --grass-dk: #4a7c3f;
+  --cream:   #17181c;
+  --hide-1:  #e7e4de;
+  --hide-2:  #24252b;
+  --spot:    #d3cabb;
+  --border:  #3a3b42;
+  --error:   #e06352;
+  --surface: #1f2024;
+  --text-muted: #968f84;
 }
 
 html, body, #root {
@@ -24,4 +39,5 @@ html, body, #root {
 body {
   background: var(--cream);
   color: var(--hide-1);
+  transition: background 0.2s, color 0.2s;
 }

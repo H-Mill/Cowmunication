@@ -72,7 +72,8 @@
   padding: 0.85rem;
   border: 2px solid var(--border);
   border-radius: var(--radius);
-  background: #fff;
+  background: var(--surface);
+  color: var(--hide-1);
   font-size: 0.95rem;
   font-family: inherit;
   line-height: 1.6;
@@ -108,7 +109,7 @@
 }
 
 .placeholder {
-  color: #b0a090;
+  color: var(--text-muted);
   font-style: italic;
 }
 
@@ -124,7 +125,8 @@
   height: 2.5rem;
   border-radius: 50%;
   border: 2px solid var(--border);
-  background: #fff;
+  background: var(--surface);
+  color: var(--hide-1);
   font-size: 1.2rem;
   cursor: pointer;
   display: flex;
@@ -152,6 +154,7 @@
   border-radius: 6px;
   border: 1.5px solid var(--border);
   background: transparent;
+  color: var(--hide-1);
   cursor: pointer;
   transition: background 0.12s, color 0.12s;
 }

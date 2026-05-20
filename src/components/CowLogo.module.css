@@ -1,0 +1,51 @@
+.btn {
+  padding: 0;
+  border: none;
+  background: none;
+  line-height: 0;
+  cursor: pointer;
+  flex-shrink: 0;
+  border-radius: 50%;
+  transition: transform 0.1s;
+}
+
+.btn:hover { transform: scale(1.06); }
+.btn:active { transform: scale(0.92); }
+
+.btn:focus-visible {
+  outline: 2px solid var(--grass);
+  outline-offset: 3px;
+}
+
+.cow {
+  width: 3rem;
+  height: 3rem;
+  flex-shrink: 0;
+  display: block;
+}
+
+.head { fill: var(--hide-2); stroke: var(--spot); stroke-width: 1.5; }
+.ear { fill: var(--hide-2); stroke: var(--spot); stroke-width: 1.5; }
+.horn { fill: #d9c2a0; stroke: var(--spot); stroke-width: 1; }
+.spotMark { fill: var(--spot); opacity: 0.85; }
+.muzzle { fill: #e7b8ad; stroke: var(--spot); stroke-width: 1.2; }
+.nostril { fill: var(--spot); }
+
+:global([data-theme="dark"]) .nostril { fill: #5b3a2c; }
+
+.eye {
+  fill: #1a1a1a;
+  transition: fill 0.2s;
+}
+
+/* Evil cow: glowing red eyes in dark mode */
+:global([data-theme="dark"]) .eye {
+  fill: #ff2a2a;
+  filter: drop-shadow(0 0 2px #ff0000) drop-shadow(0 0 4px #ff3b3b);
+  animation: eyeGlow 1.8s ease-in-out infinite;
+}
+
+@keyframes eyeGlow {
+  0%, 100% { opacity: 0.85; }
+  50%      { opacity: 1; }
+}

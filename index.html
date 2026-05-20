@@ -50,6 +50,15 @@
         "author": { "@type": "Person", "name": "H-Mill" }
       }
     </script>
+    <script>
+      (function () {
+        var saved = localStorage.getItem("cow-theme");
+        var theme = saved
+          ? saved
+          : (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
