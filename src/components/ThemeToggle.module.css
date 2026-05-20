@@ -7,8 +7,7 @@
   border-radius: 50%;
   border: 2px solid var(--border);
   background: var(--surface);
-  font-size: 1.1rem;
-  line-height: 1;
+  color: var(--hide-1);
   cursor: pointer;
   display: flex;
   align-items: center;
