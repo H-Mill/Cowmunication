@@ -1,5 +1,4 @@
 export const SAYINGS = [
-  "Every moo token encodes 4 bits — two tokens per byte.",
   "Holy cow, you can actually talk to cattle now.",
   "Don't have a cow — just translate one.",
   "Until the cows come home, we'll keep mooing.",
